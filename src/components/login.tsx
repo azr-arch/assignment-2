@@ -39,7 +39,9 @@ export const Login: React.FC = () => {
 
         const isNumberValid = phoneNumberRegex.test(formData.phoneNumber);
         if (!isNumberValid) {
-            alert("Please enter a valid phone number");
+            alert(
+                "Enter a valid 10-digit Indian phone number.. It should start with a digit between 6 and 9."
+            );
             return;
         }
 
