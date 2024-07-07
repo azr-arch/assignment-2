@@ -50,7 +50,7 @@ export const Login: React.FC = () => {
         setFormData(initialState);
 
         // Navigate to the specified route (default to "/dashboard")
-        navigate(`${redirectURL ?? "/dashboard"}`);
+        navigate(`/${redirectURL ?? "dashboard"}`);
     };
 
     return (

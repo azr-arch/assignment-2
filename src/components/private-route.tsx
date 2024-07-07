@@ -5,7 +5,7 @@ export const PrivateRoute = ({ children }: { children: React.ReactNode }) => {
 
     // If user is not logged in then redirect them to '/' route
     if (!user) {
-        return <Navigate to={"/?redirect=/dashboard"} replace />;
+        return <Navigate to={"/?redirect=dashboard"} replace />;
     }
 
     return <>{children}</>;
